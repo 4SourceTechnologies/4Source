@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300&family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+	<!-- Latest compiled and minified Bootsrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+	<title>Contact Us</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="header">
+		<img class="logo" src="images\logo.png" />
+		<div class="menu">
+			<i class="fa fa-bars"></i>
+		</div>
+		<ul class="hidden-menu">
+			<a href="#">
+				<li class="menu-item">Home</li>
+			</a>
+			<a href="#">
+				<li class="menu-item">About Us</li>
+			</a>
+			<a href="#">
+				<li class="menu-item">Blog</li>
+			</a>
+			<a href="#">
+				<li class="menu-item">Career</li>
+			</a>
+			<a href="#">
+				<li class="menu-item">Contact</li>
+			</a>
+		</ul>
+	</header>
+
+	<div class="main">
+
+			<img class="wm" src="images\Contact us.png" alt="">
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+ eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+
+		</div>
+
+		<!-- Form Section -->
+		<div class="container" id="form">
+
+			<form>
+
+				<label for="name">Enter your name</label>
+				<input type="text" id="Fullname">
+
+				<label for="email">Enter your email</label>
+				<input type="email" id="mail">
+
+				<label for="project-details">Project Details</label>
+				<input type="text" id="project">
+
+				<label for="phone">Mobile Number</label>
+				<input type="tel" id="phone">
+
+				<input type="submit" value="&rarr; &nbsp send" id="sendBtn">
+
+			</form>
+
+		</div>
+
+		<!-- Footer Section -->
+		<footer class="footer" id=contactFooter>
+			<!-- <h1>Let's Make Something Together</h1>
+			<h3>Start by
+				<span>
+					saying hi
+				</span>
+			</h3> -->
+			<div class="links footer-links">
+				<div class="one">
+					<p>BG-168, Ground Floor, Sector , <br />
+						Bidhannagar, Kolkata, West Bengal 700091</p>
+					<div class="icons">
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-google-plus"></i>
+						<i class="fa fa-linkedin"></i>
+						<i class="fa fa-pinterest"></i>
+					</div>
+				</div>
+				<div class="two">
+					<p>
+						+91 8961100055 (IND)/ +91 9831900326 (IND)</p>
+				</div>
+				<div class="three">
+					<p>sales@4sourcetechnologies.com/ hr@4sourcetechnologies.com</p>
+				</div>
+				<p class="copyright">
+					Copyright 2019 4 Source Technologies All Rights Reserved.
+				</p>
+			</div>
+		</footer>
+		<script>
+			$('.banner-img h3').click(function() {
+				$('html,body').animate({
+					scrollTop: $('.custom-about-sec').offset().top
+				}, 100);
+			})
+			const menu = document.querySelector(".menu")
+			const hiddenMenu = document.querySelector(".hidden-menu")
+			menu.addEventListener("click", () => {
+				hiddenMenu.classList.toggle("show")
+			})
+		</script>
+	</body>
+
+	</html>
