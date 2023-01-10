@@ -146,7 +146,7 @@ body {
 /*---- About us sec------ */
   .custom-about-sec {
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 1.25rem;
   }
 
   .custom-about-sec h2 {
@@ -201,7 +201,7 @@ h3.digital-sec {
 }
 
 .custom-options {
-  margin-bottom: 90px;
+  padding-bottom: 1.25rem;
   margin-top: 20px;
 }
 
@@ -546,6 +546,71 @@ h3.digital-sec span {
   }
 }
 
+.circleDiv{
+  position: relative;
+}
+
+#animatedCircle{
+  margin: 0 auto;
+  width: 50%;
+  padding-inline: 2rem;
+  z-index: 40;
+}
+
+.animatedCircleText{
+  position: absolute;
+  z-index: 25;
+  margin: 0 auto;
+}
+
+.animatedCircleText embed{
+  width: 84%;
+  position: relative;
+  bottom: 1rem;
+}
+
+/* SVG Animations */
+  #servicesCircle{
+    width: 100%;
+    position: absolute;
+    top: -3rem;
+    left: 0rem;
+    padding-bottom: 7rem;
+  }
+
+  .iconService{
+    cursor: pointer;
+  }
+
+  .iconService:hover circle{
+    fill:#ffc83b;
+  }
+
+	.animatedCircleIcons:hover circle {
+	  fill: #ffc83b;
+	}
+  .animatedCircleIcons:hover{
+    transform: scale(1.05) translateX(-1rem) ;
+    }
+  .animatedCircleIcons:hover.bc{
+    transform: scale(1.05) translateX(-2.25rem)translateY(-1rem) ;
+  }
+  
+  .animatedCircleIcons:hover.rc {
+    transform: scale(1.05) translateX(0rem)translateY(-1rem);
+  }
+  .animatedCircleIcons:hover.ac {
+    transform: scale(1.05)translateY(-1.35rem)translateX(-1.6rem);
+  }
+  .animatedCircleIcons:hover.jc {
+    transform: scale(1.05) translateY(-1.5rem)translateX(-0.5rem);
+  }
+  .rotatingCircle{
+    display: none;
+  }
+
+/* SVG Animations */
+
 /*-------Blog css --------*/
   .custom-inner {
     display: flex;
@@ -625,9 +690,10 @@ h3.digital-sec span {
       max-width: 100%;
       position: inherit;
     }
-    
-    .blogCards{
-      width: 100%;
+
+		.blogCards{
+			width: 100%;
+		}
   }
 /* Blog Page */
 
@@ -807,6 +873,12 @@ h3.digital-sec span {
 
   .web-text p {
     padding-top: 2rem;
+  }
+
+  .circular_img{
+    position: relative;
+    flex: 2 0 32%;
+    padding-bottom: 6rem;
   }
 
   @media (max-width:767px) {
@@ -1082,6 +1154,9 @@ h3.digital-sec span {
 
   img.post-img {
     width: 100%;
+  }
+
+  img.post-img:hover{
     box-shadow: 0 0 28px 1px rgb(104 98 98 / 50%);
   }
 
@@ -1172,7 +1247,13 @@ h3.digital-sec span {
   }
 
   .col-md-6.post4 {
-    margin-top: 70px;
+    margin-top: 10px;
+  }
+
+  @media(min-width:992px){
+    .ourWorkBody .custom-inner .col-lg-6{
+      width: 48%;
+    }
   }
 
   @media(max-width:900px) {
@@ -1211,3 +1292,8 @@ h3.digital-sec span {
     }
   }
 /* Our Work Ends */
+
+/* Services Page */
+.servicesBody .victor{
+  width: 20rem;
+}
