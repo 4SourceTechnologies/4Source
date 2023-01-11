@@ -600,7 +600,7 @@ body{
     }
 
     .fourth .right {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       place-items: center;
     }
   }
@@ -950,5 +950,19 @@ label {
 
   .footer .copyright {
     top: 16.8rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .main p{
+    padding: 2rem;
+  }
+
+  #form{
+    padding: 1rem 5rem;
+  }
+
+  #form input,textarea{
+    width: 34rem
   }
 }

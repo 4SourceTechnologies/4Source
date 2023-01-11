@@ -14,6 +14,33 @@ body {
   overflow-x: hidden;
 }
 
+/* AOS Custom Attributes */
+  body[data-aos-delay='3400'] [data-aos].aos-animate,
+  [data-aos][data-aos][data-aos-delay='3400'].aos-animate {
+    transition-delay: 3400ms;
+  }
+
+  body[data-aos-delay='3500'] [data-aos].aos-animate,
+  [data-aos][data-aos][data-aos-delay='3500'].aos-animate {
+    transition-delay: 3500ms;
+  }
+
+  body[data-aos-delay='3600'] [data-aos].aos-animate,
+  [data-aos][data-aos][data-aos-delay='3600'].aos-animate {
+    transition-delay: 3600ms;
+  }
+  
+  body[data-aos-delay='3700'] [data-aos],
+  [data-aos][data-aos][data-aos-delay='3700'].aos-animate {
+    transition-delay: 3700ms;
+  }
+
+  body[data-aos-delay='3800'] [data-aos],
+  [data-aos][data-aos][data-aos-delay='3800'].aos-animate {
+    transition-delay: 3800ms;
+  }
+/* Aos Custom Attributes */
+
 @font-face {
   font-family: 'Tourmaline Bold';
   font-style: normal;
@@ -209,10 +236,6 @@ h3.digital-sec {
   width: 100%;
 }
 
-.container {
-  max-width: 85%;
-}
-
 .col-md-6.custom-right-sec h4 {
   font-size: 16px;
   margin-bottom: 25px;
@@ -405,8 +428,6 @@ h3.digital-sec span {
   .container-md,
   .container-sm {
     max-width: 100% !important;
-    padding-left: 4.5rem !important;
-    padding-right: 4.5rem !important;
   }
 
   .custom-about-sec p {
@@ -469,14 +490,13 @@ h3.digital-sec span {
   }
 
   .col-md-6.custom-leftimg {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-inline: 0;
     margin-bottom: 30px;
     text-align: center;
   }
 
   img.about-sec-p {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -503,8 +523,13 @@ h3.digital-sec span {
     left: -10px;
   }
 
-  .col-md-6.custom-right-sec {
-    padding-left: 12px;
+  h3.digital-sec{
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  h3.digital-sec span{
+    padding-left: 0;
   }
 
   .custom-about-sec .col-md-6.custom-logoabout {
@@ -569,6 +594,12 @@ h3.digital-sec span {
   bottom: 1rem;
 }
 
+@media (min-width:768px) {
+  .footer {
+      padding: 4rem 3rem;
+    }
+}
+
 /* SVG Animations */
   #servicesCircle{
     width: 100%;
@@ -578,7 +609,7 @@ h3.digital-sec span {
     padding-bottom: 7rem;
   }
 
-  .iconService{
+  .animatedCircleIcons{
     cursor: pointer;
   }
 
@@ -605,9 +636,63 @@ h3.digital-sec span {
   .animatedCircleIcons:hover.jc {
     transform: scale(1.05) translateY(-1.5rem)translateX(-0.5rem);
   }
-  .rotatingCircle{
-    display: none;
-  }
+  
+  #rotatingCircle{
+      animation-name: rotate45, rotate90, rotate135, rotate180, rotate225, rotate270 rotate315, rotate360;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-play-state: paused;
+    }
+
+    @keyframes rotate45 {
+      to {
+        transform: rotate(45deg)
+      }
+    }
+
+    @keyframes rotate90 {
+      to{
+        transform: rotate(90deg);
+      }
+    }
+
+    @keyframes rotate135{
+      to{
+        transform: rotate(135deg);
+      }
+    }
+
+    @keyframes rotate180{
+      to{
+        transform: rotate(180deg);
+      }
+    }
+
+    @keyframes rotate225 {
+      to{
+        transform: rotate(225deg);
+      }
+    }
+    
+    @keyframes rotate270 {
+      to{
+        transform: rotate(270deg);
+      }
+    }
+
+    @keyframes rotate315 {
+      to{
+        transform: rotate(315deg);
+      }  
+    }
+
+    @keyframes rotate360{
+      to{
+        transform: rotate(360deg);
+      }
+    }
+  /* animations */
+    
 
 /* SVG Animations */
 
@@ -620,7 +705,6 @@ h3.digital-sec span {
 
   .blogCards {
     margin-bottom: 50px;
-    width: 32%!important;
   }
 
   .portfolio-item {
@@ -647,7 +731,7 @@ h3.digital-sec span {
 
   .custom-blog {
     margin-top: 4rem;
-    padding: 4rem;
+    padding: 4rem 2rem;
     max-width: 100%;
     position: relative;
   }
@@ -658,17 +742,20 @@ h3.digital-sec span {
 
   .custom-inner .col-md-4 {
     padding: 12px;
+    border-radius: 10px;
   }
 
   img.blog-imgsec {
     max-width: 90%;
     margin-top: 90px;
     margin-bottom: 30px;
+    
   }
 
   img.img-sec {
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
   }
 
   @media(max-width:767px) {
@@ -694,6 +781,27 @@ h3.digital-sec span {
 		.blogCards{
 			width: 100%;
 		}
+  }
+
+  @media (min-width:768px) {
+    .blogCards.col-md-4 {
+        width: 31%;
+      }
+
+    .custom-inner{
+      padding-bottom: 0;
+    }
+  }
+
+  @media (min-width:576px) and (max-width:767px) {
+    .blogCards.col-sm-12 {
+        width: 100%;
+      }
+
+    .custom-inner{
+      margin-top: 0;
+      padding-bottom: 0;
+    }
   }
 /* Blog Page */
 
@@ -722,6 +830,10 @@ h3.digital-sec span {
     display: inline-block;
   }
 
+  .boxtext{
+    position:relative;
+  }
+
   .opportunities h2 {
     color: #35026a;
     font-weight: 600;
@@ -734,6 +846,16 @@ h3.digital-sec span {
     font-weight: 500;
     line-height: 1.9;
     width: 18.15rem
+  }
+
+  @media (min-width:768px) and (max-width:1023px) {
+    .opportunities{
+      top: 0;
+      right: 2rem;
+      height: 17rem;
+      padding: 2rem;
+      width: 21rem;
+    }
   }
 
   @media (max-width:767px) {
@@ -756,6 +878,24 @@ h3.digital-sec span {
     }
   }
 
+  @media (min-width:1024px) and (max-width:1439px){
+    .opportunities{
+      top: 0;
+      right: 2rem;
+      height: 15rem;
+      padding: 2rem;
+      width: 21rem;
+    }
+
+    .opportunities p{
+      line-height: 1.7;
+    }
+    
+    .opportunities h2{
+      line-height: 1;
+    }
+  }
+
   /* Bottom Section */
   .card {
     background-color: white;
@@ -774,8 +914,6 @@ h3.digital-sec span {
   }
 
   #cards_section {
-    width: 80%;
-    padding: 5px;
     margin: auto;
     display: flex;
     column-gap: 1em;
@@ -783,6 +921,7 @@ h3.digital-sec span {
     row-gap: 1em;
     position: relative;
     left: 1rem;
+    padding-inline: 4rem;
   }
 
   #bottom_section h5 {
@@ -841,6 +980,12 @@ h3.digital-sec span {
       width: 80%;
     }
   }
+
+  @media (min-width:1024) and (max-width:1439px) {
+    #cards_section{
+      padding-inline: 3rem;
+    }
+  }
 /* Career Page Ends */
 
 /* Services Page */
@@ -881,6 +1026,13 @@ h3.digital-sec span {
     padding-bottom: 6rem;
   }
 
+  .serviceCircle{
+    position: relative;
+    width: 19.5rem;
+    height: 19.5rem;
+    border-radius: 50%;
+  }
+
   @media (max-width:767px) {
     .web {
       flex-direction: column;
@@ -891,6 +1043,17 @@ h3.digital-sec span {
       margin: 0;
       padding: 2.5rem 1rem;
       padding-right: 1.5rem;
+    }
+
+    .circular_img{
+      padding-bottom: 0;
+    }
+
+    #servicesCircle{
+      width: 85%;
+      height: 100%;
+      position: static;
+      padding-bottom: 0;
     }
   }
 
@@ -959,6 +1122,32 @@ h3.digital-sec span {
     bottom: 1.5rem;
   }
 
+  @media (max-width:992px) {
+    .adv-text{
+      padding: 2rem 1rem ;
+    }
+
+    .adv-text h1{
+      padding-inline: 0.5rem;
+      font-size: 2.5rem;
+    }
+
+    .adv-text p{
+      padding-inline: 4rem;
+      padding-top: 0.65rem;
+    }
+
+    .differ{
+      grid-gap: 2rem;
+      padding: 2rem 4rem;
+    }
+
+    .stories{
+      padding: 1rem 4rem;
+    }
+  }
+
+
   @media (max-width:767px) {
     .adv-text {
       padding: 2rem 1rem 2rem 2rem;
@@ -983,12 +1172,27 @@ h3.digital-sec span {
     }
   }
 
+  @media (max-width:321px) {
+    .adv-text p {
+      padding-inline: 0;
+    }
+
+    .adv-text{
+      padding: 2rem 1rem 0;
+    }
+  }
+
   .boxes {
-    padding-block: 4rem;
+    padding-block: 4rem 0;
     padding-right: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-column-gap: 2rem;
+  }
+
+  .it{
+    padding: 0 1rem 0 4rem;
+  }
+
+  .elaborate{
+    padding-inline: 4rem;
   }
 
   .it img {
@@ -996,9 +1200,13 @@ h3.digital-sec span {
   }
 
   .Circle_text {
-    position: relative;
-    bottom: 12rem;
-    left: 4rem;
+    position: absolute;
+    top: 28%;
+    left: 21%;
+  }
+
+  .serviceCircle img{
+    width: 85%;
   }
 
   .Circle_text h4 {
@@ -1061,16 +1269,6 @@ h3.digital-sec span {
     color: #da251e;
   }
 
-  #redhr2 {
-    top: -1.75rem;
-    opacity: 1;
-  }
-
-  #redtext {
-    bottom: 3rem;
-    position: relative;
-  }
-
   .case-study hr {
     border: none;
     border-bottom: 1.5px solid;
@@ -1080,6 +1278,12 @@ h3.digital-sec span {
     top: -2.75rem;
   }
 
+  @media (max-width:321px) {
+    .case-study hr {
+        width: 6rem;
+      }
+  }
+
   @media (max-width:767px) {
     .boxes {
       padding: 0;
@@ -1087,8 +1291,12 @@ h3.digital-sec span {
       display: inherit;
     }
 
+    .it{
+      padding: 0;
+    }
+
     .it img {
-      max-width: 112%;
+      max-width: 100%;
     }
 
     .elaborate img {
@@ -1100,7 +1308,7 @@ h3.digital-sec span {
     }
 
     .elaborate {
-      padding: 2rem 1rem;
+      padding: 2rem;
     }
 
     .Circle_text br {
@@ -1109,6 +1317,20 @@ h3.digital-sec span {
 
     .lower_text {
       position: static;
+    }
+
+    .serviceCircle{
+      height: inherit;
+    }
+  }
+  
+  @media (max-width:992px) and (min-width:778px) {
+    .elaborate{
+      padding-top: 2rem;
+    }
+
+    .it{
+      padding:0 ;
     }
   }
 
@@ -1136,13 +1358,23 @@ h3.digital-sec span {
     display: inline;
     padding-inline: 2rem;
   }
+
+  @media (max-width:321px){
+    .wdev{
+      padding: 2rem 1rem;
+    }
+  }
+
+  @media (max-width:767px) {
+    .content-table{
+      width:75%;
+    }
+  }
 /* Services Ends */
 
 /*------ our_work-------------*/
   .custom-our-work {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+    padding-inline: 2.5rem;
   }
 
   .banner-our-sec {
@@ -1296,4 +1528,17 @@ h3.digital-sec span {
 /* Services Page */
 .servicesBody .victor{
   width: 20rem;
+}
+
+@media (max-width: 767px) {
+  .servicesBody .success{
+    width: 3.7rem;
+    padding-inline: 0;
+  }
+
+  .servicesBody .victor{
+    width: 10rem;
+    right: 1rem;
+    bottom: 5rem;
+  }
 }
