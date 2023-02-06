@@ -1,0 +1,51 @@
+<svg id="animatedCircleText" xmlns="http://www.w3.org/2000/svg" width="1500" height="887" viewBox="0 0 1500 887">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 20px;
+        fill: #38016e;
+        font-weight: 600;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Poppins;
+      }
+
+      .cls-2 {
+        font-size: 16px;
+        fill: #323232;
+      }
+
+      .cls-3 {
+        fill: none;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g>
+    <text id="We_Embrace_Digital" data-name="We Embrace Digital" class="cls-1" x="1021.999" y="196">We Embrace Digital</text>
+    <text id="Sed_ut_perspiciatis_unde_omnis_iste_natus_error" data-name="Sed ut perspiciatis unde omnis iste natus error" class="cls-2" x="1026.001" y="222.001">Sed ut perspiciatis unde omnis iste natus error</text>
+  </g>
+  <g id="Group_36_copy" data-name="Group 36 copy">
+    <text id="innovative_minds" data-name="innovative minds" class="cls-1" x="1126" y="441.001">innovative minds</text>
+    <text id="Sed_ut_perspiciatis_unde_omnis_iste_natus_error-2" data-name="Sed ut perspiciatis unde omnis iste natus error" class="cls-2" x="1129.999" y="467.002">Sed ut perspiciatis unde omnis iste natus error</text>
+  </g>
+  <g id="Group_36_copy_2" data-name="Group 36 copy 2">
+    <text id="Creative_is_our_personality" data-name="Creative is our personality" class="cls-1" x="1021.001" y="673.001">Creative is our personality</text>
+    <text id="Sed_ut_perspiciatis_unde_omnis_iste_natus_error-3" data-name="Sed ut perspiciatis unde omnis iste natus error" class="cls-2" x="1025" y="699.001">Sed ut perspiciatis unde omnis iste natus error</text>
+  </g>
+  <g id="Group_36_copy_3" data-name="Group 36 copy 3">
+    <text id="Flexible_to_work" data-name="Flexible to work" class="cls-1" x="313.001" y="673.001">Flexible to work</text>
+    <text id="Sed_ut_perspiciatis_unde_omnis_iste_natus_error-4" data-name="Sed ut perspiciatis unde omnis iste natus error" class="cls-2" x="99" y="699.001">Sed ut perspiciatis unde omnis iste natus error</text>
+  </g>
+  <g id="Group_36_copy_4" data-name="Group 36 copy 4">
+    <text id="Proven_Track_Record" data-name="Proven Track Record" class="cls-1" x="162.999" y="443.001">Proven Track Record</text>
+    <text id="Sed_ut_perspiciatis_unde_omnis_iste_natus_error-5" data-name="Sed ut perspiciatis unde omnis iste natus error" class="cls-2" x="0.001" y="469.002">Sed ut perspiciatis unde omnis iste natus error</text>
+  </g>
+  <g id="Group_36_copy_5" data-name="Group 36 copy 5">
+    <text id="Healthy_Culture" data-name="Healthy Culture" class="cls-1" x="313.001" y="203.001">Healthy Culture</text>
+    <path class="cls-3" d="M745,2160l27-23,26-12,22-5,8,4,2,7,2,4h3l4-2,5-1,8,1,12,10-2,5v8l3,6-1,2,3,1,5,2-2,4,2,11-2,5-8,31-17,18s-36.295,7.2-39,7-45-26-45-26l-6-19-9-20Z" transform="translate(-212 -1356)"/>
+    <path class="cls-3" d="M1326,1401c-1.44,1.82-8,4-8,4l-4-5,1-3-1-5-3-5-1-8,3-13s44.82-9.4,45-10,37,32,37,32l11,23-10,21s-6.76,24.98-12,28-17.65,1.41-19,0-9-13-9-13l2-8-2-5-5-1-6-3s0.29-7.07,1-8,1-4,1-4l1-7-8-7-7-3S1327.44,1399.18,1326,1401Z" transform="translate(-212 -1356)"/>
+    <text id="Sed_ut_perspiciatis_unde_omnis_iste_natus_error-6" data-name="Sed ut perspiciatis unde omnis iste natus error" class="cls-2" x="100" y="229.001">Sed ut perspiciatis unde omnis iste natus error</text>
+  </g>
+</svg>

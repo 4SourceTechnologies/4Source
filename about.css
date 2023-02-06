@@ -598,6 +598,38 @@ h3.digital-sec span {
   .footer {
       padding: 4rem 3rem;
     }
+
+    #animatedCircle{
+      height: max-content;
+    }
+
+    .animatedCircleText {
+      top: -25%;;
+    }
+
+    .animatedCircleText embed{
+      width: 98%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (max-width: 767px){
+  .animatedCircleText{
+    top: -12.5%;
+    
+  }
+
+  #animatedCircle{
+    width: 64%;
+    height: max-content;
+  }
+
+  .animatedCircleText embed{
+    width: 100%;
+  }
 }
 
 /* SVG Animations */
@@ -635,6 +667,12 @@ h3.digital-sec span {
   }
   .animatedCircleIcons:hover.jc {
     transform: scale(1.05) translateY(-1.5rem)translateX(-0.5rem);
+  }
+
+
+
+  .rotatingCircle{
+    display: none;
   }
   
   #rotatingCircle{

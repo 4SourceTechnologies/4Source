@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="546" viewBox="0 0 500 546">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eef6ff;
+      }
+
+      .cls-2 {
+        font-size: 24px;
+        fill: #1a1a1a;
+        text-anchor: middle;
+        font-family: Poppins;
+      }
+
+      .cls-3 {
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-size: 16px;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #eef6ff;
+        stroke-width: 2px;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        fill: #ffd304;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="312" y="379" width="167" height="167" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#eef6ff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g>
+    <circle id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" class="cls-1" cx="381.5" cy="83.5" r="83.5"/>
+    <text id="_50_eCommerce_experts" data-name="50+  eCommerce experts" class="cls-2" x="370" y="66.997"><tspan class="cls-3">50+</tspan><tspan class="cls-4" x="370" dy="12">eCommerce</tspan><tspan class="cls-4" x="370" dy="20">experts</tspan></text>
+  </g>
+  <g>
+    <circle class="cls-1" cx="94.5" cy="263.5" r="83.5"/>
+    <text id="_100_Solution_developed" data-name="100+  Solution developed" class="cls-2" x="83" y="244.996"><tspan class="cls-3">100+</tspan><tspan class="cls-4" x="83" dy="12">Solution</tspan><tspan class="cls-4" x="83" dy="18">developed</tspan></text>
+  </g>
+  <g>
+    <circle class="cls-5" cx="307.5" cy="282.5" r="180.5"/>
+    <circle id="Ellipse_2_copy" data-name="Ellipse 2 copy" class="cls-5" cx="307.5" cy="282.5" r="157.5"/>
+    <circle class="cls-6" cx="213.5" cy="143.5" r="11.5"/>
+    <circle id="Ellipse_4_copy" data-name="Ellipse 4 copy" class="cls-6" cx="210.5" cy="419.5" r="11.5"/>
+    <circle id="Ellipse_4_copy_2" data-name="Ellipse 4 copy 2" class="cls-6" cx="474.5" cy="270.5" r="11.5"/>
+  </g>
+  <g>
+    <circle id="Ellipse_3_copy" data-name="Ellipse 3 copy" class="cls-7" cx="395.5" cy="462.5" r="83.5"/>
+    <text id="_50_Raised_by_clients_" data-name="50+  Raised by clients " class="cls-2" x="384" y="447.997"><tspan class="cls-3">50+</tspan><tspan class="cls-4" x="384" dy="12">Raised by</tspan><tspan class="cls-4" x="384" dy="20">clients</tspan></text>
+  </g>
+</svg>

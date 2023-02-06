@@ -32,22 +32,22 @@
 				<i class="fa fa-bars"></i>
 			</div>
 			<ul class="hidden-menu">
-			<a href="index.html">
-				<li class="menu-item">Home</li>
-			</a>
-			<a href="about.html">
-				<li class="menu-item">About Us</li>
-			</a>
-			<a href="blog.html">
-				<li class="menu-item">Blog</li>
-			</a>
-			<a href="career.html">
-				<li class="menu-item">Career</li>
-			</a>
-			<a href="contact.html">
-				<li class="menu-item">Contact</li>
-			</a>
-		</ul>
+				<a href="index.html">
+					<li class="menu-item">Home</li>
+				</a>
+				<a href="about.html">
+					<li class="menu-item">About Us</li>
+				</a>
+				<a href="blog.html">
+					<li class="menu-item">Blog</li>
+				</a>
+				<a href="career.html">
+					<li class="menu-item">Career</li>
+				</a>
+				<a href="contactUs.html">
+					<li class="menu-item">Contact</li>
+				</a>
+			</ul>
 		</div>
 
 
@@ -142,21 +142,7 @@
 	</footer>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		$('.banner-img h3').click(function () {
-			$('html,body').animate({
-				scrollTop: $('.custom-blog').offset().top
-			}, 100);
-		})
-		const menu = document.querySelector(".menu")
-		const hiddenMenu = document.querySelector(".hidden-menu")
-		menu.addEventListener("click", () => {
-			hiddenMenu.classList.toggle("show")
-		})
-
-		AOS.init();
-
-	</script>
+	<script src="index.js"></script>
 </body>
 
 </html>
